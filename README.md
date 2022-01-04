@@ -1,0 +1,1 @@
+# test-renovate-config-validator
