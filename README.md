@@ -30,3 +30,15 @@ renovate.json5 is invalid JSON5, but the validation is passed.
 CI also passed. https://github.com/suzuki-shunsuke/test-renovate-config-validator/runs/4699431761?check_suite_focus=true
 
 Renovate detected the issue. https://github.com/suzuki-shunsuke/test-renovate-config-validator/issues/1
+
+## Debug Log
+
+```console
+$ LOG_LEVEL=debug ./node_modules/.bin/renovate-config-validator
+DEBUG: Using RE2 as regex engine
+DEBUG: Checking for config file in /Users/shunsuke-suzuki/repos/src/github.com/suzuki-shunsuke/test-renovate-config-validator/config.js
+DEBUG: No config file found on disk - skipping
+ INFO: Config validated successfully
+```
+
+It seems that configuration file `renovate.json5` can't be found.
