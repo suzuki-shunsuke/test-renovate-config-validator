@@ -1,0 +1,12 @@
+{
+  "packageRules": [
+    {
+      "matchManagers": ["gomod"],
+      "postUpdateOptions": ["gomodTidy"],
+    } // This is invalid JSON5. "," is required. renovate-config-validator should fail
+    {
+      "matchFiles": ["go.mod"],
+      "postUpdateOptions": ["gomodTidy"],
+    }
+  ],
+}
